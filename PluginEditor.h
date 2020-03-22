@@ -39,16 +39,6 @@ private:
 	
 	void comboBoxChanged(ComboBox* box) override;
 
-	//void timerCallback() override
-	//{
-	//	if (processor.chordIdx != processor.lastIdx) {
-	//		chordList.setSelectedItemIndex(processor.chordIdx);
-	//		processor.lastIdx = processor.chordIdx;
-	//		stopTimer();
-	//	}
-	//	
-	//	
-	//}
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (HarmonizerAudioProcessorEditor)
 };

@@ -288,13 +288,7 @@ void HarmonizerAudioProcessor::processBlock (AudioBuffer<float>& buffer, MidiBuf
 					newMidiBuffer.addEvent(el_off, time);
 				}
 
-				
-
-				//Dobra wersja-wyciszanie tercji----------------------------------------------------------------------------
-				/*MidiMessage el_off = MidiMessage::noteOff(third.getChannel(), third.getNoteNumber(), third.getVelocity());
-				newMidiBuffer.addEvent(el_off, time);*/
-				//-----------------------------------------------------------------------------------------------------------
-
+			
 				
 			}
 			else if (m.isAftertouch())

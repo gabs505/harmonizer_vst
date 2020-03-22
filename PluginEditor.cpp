@@ -33,9 +33,7 @@ HarmonizerAudioProcessorEditor::HarmonizerAudioProcessorEditor (HarmonizerAudioP
 	addAndMakeVisible(pluginLabel);
 	pluginLabel.setText("Choose chord type: ", dontSendNotification);
 	pluginLabel.attachToComponent(&chordList, false);
-	//startTimer(400);
-
-	//keyboard.addListener(listener);
+	
 	
 
 
@@ -49,7 +47,7 @@ HarmonizerAudioProcessorEditor::~HarmonizerAudioProcessorEditor()
 //==============================================================================
 void HarmonizerAudioProcessorEditor::paint (Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
+   
     g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));
 
     g.setColour (Colours::white);
@@ -77,17 +75,3 @@ void  HarmonizerAudioProcessorEditor::chordListChanged() {
 	processor.chordIdx = chordList.getSelectedId();
 }
 
-//void  HarmonizerAudioProcessorEditor::keyboardStateChanged() {
-//	 chordList.setSelectedItemIndex(processor.chordIdx);
-//}
-//void HarmonizerAudioProcessorEditor::handleNoteOn(MidiKeyboardState*, int midiChannel, int midiNoteNumber, float velocity) {
-//	/*if (keyboard.isNoteOn) {
-//		chordList.setSelectedItemIndex(processor.chordIdx);
-//	}*/
-//	
-//
-//}
-//
-//void HarmonizerAudioProcessorEditor::handleNoteOff(MidiKeyboardState*, int midiChannel, int midiNoteNumber, float velocity) {
-//	
-//}
